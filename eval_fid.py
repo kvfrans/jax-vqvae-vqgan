@@ -38,6 +38,7 @@ FLAGS = flags.FLAGS
 flags.DEFINE_string('dataset_name', 'imagenet128', 'Environment name.')
 flags.DEFINE_string('load_dir', None, 'Load dir (if not None, load params from here).')
 flags.DEFINE_integer('batch_size', 256, 'Total Batch size.')
+# Flags are inhereited from train.py, so pass your model parameters again here to evaluate.
 
 def main(_):
     device_count = len(jax.local_devices())

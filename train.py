@@ -31,7 +31,7 @@ from models.vqvae import VQVAE
 from models.discriminator import Discriminator
 
 FLAGS = flags.FLAGS
-flags.DEFINE_string('dataset_name', 'imagenet128', 'Environment name.')
+flags.DEFINE_string('dataset_name', 'imagenet256', 'Environment name.')
 flags.DEFINE_string('save_dir', None, 'Save dir (if not None, save params).')
 flags.DEFINE_string('load_dir', None, 'Load dir (if not None, load params from here).')
 flags.DEFINE_integer('seed', np.random.choice(1000000), 'Random seed.')

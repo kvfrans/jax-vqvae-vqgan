@@ -38,7 +38,8 @@ You can evaluate models using the `eval_fid` command.
 | VQGAN-KL  |  3.31   | N/A |
 | VQGAN-FSQ |  7.29   | ~7.5 ([FSQ](https://arxiv.org/abs/2309.15505)) |
 
-### Examples
+## Examples
+(top row = real images, bottom row = reconstruction)
 
 VQGAN
 ![](data/example_vqgan.png)

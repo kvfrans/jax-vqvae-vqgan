@@ -237,7 +237,7 @@ def main(_):
                 return image
 
             split = tfds.split_for_jax_process('train' if is_train else 'validation', drop_remainder=True)
-            dataset = tfds.load('imagenet2012', split=split, data_dir='gs://rll-tpus-kvfrans/tfds')
+            dataset = tfds.load('imagenet2012', split=split)
             dataset = dataset.map(deserialization_fn, num_parallel_calls=tf.data.AUTOTUNE)
             dataset = dataset.shuffle(10000, seed=42, reshuffle_each_iteration=True)
             dataset = dataset.repeat()

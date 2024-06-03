@@ -1,3 +1,5 @@
+# FID utilities. For most up-to-date version and instructions, see https://github.com/kvfrans/jax-fid-parallel
+
 import jax
 from jax import lax
 from jax.nn import initializers

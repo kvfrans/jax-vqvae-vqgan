@@ -1,5 +1,8 @@
-from localutils.debugger import enable_debug
-enable_debug()
+try: # For debugging
+    from localutils.debugger import enable_debug
+    enable_debug()
+except ImportError:
+    pass
 
 import flax.linen as nn
 import jax.numpy as jnp
